@@ -1,1 +1,14 @@
-<div ng-app="myApp"> {{scope.title}}</div>
+<div class="clearfix"></div>
+
+<div class="col-xs-4" ng-controller="HomeControler">
+    <form >
+        <div class="text-success" ng-repeat="item in data">
+            <h2><input  type="radio" ng-model="RadioChecked.id" value="{{item.id}}">  {{item.name}}</h2>
+        </div>
+        <br/>
+    </form>
+    <div class="col-xs-6 col-sm-4">
+        <button class="btn btn-default" ng-click="setFood()">Đồng ý</button>
+    </div>
+</div>
+

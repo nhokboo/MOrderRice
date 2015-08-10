@@ -13,6 +13,12 @@ module.config(['$routeProvider','$httpProvider', function($routeProvider,$httpPr
         	templateUrl: 'partials/home.html',
         	controller: 'HomeControler'
         })
+        .when('/setting',{
+            templateUrl: 'partials/setting.html',
+            controler: 'SettingControler'
+        }
+    )
+
         ;
 
     $routeProvider.otherwise({redirectTo: '/'});
